@@ -1,2 +1,3 @@
 # Railway_Reservation
-Railway reservation
+Railway reservation project USING JAVA Swing.
+It is a windows application
