@@ -1,0 +1,61 @@
+Railway reservation project(minor) using JAVA Swing in NetBeans IDE and MySQL Workbench.
+It is a windows application.
+
+There are 10 JFrames. These are following
+    a) Sign_in 
+    b) Sign_up 
+    c) Admin_Home 
+    d) User_Home
+    e) Admin_User_table
+    f) Train_Table
+    g) Train_Search
+    h) Train_Book
+    i) Payment
+    j) ticket_status
+
+Details of pages: 
+
+    a) Sign_in: It is a login page for users and admin, if admin or user forgot their password they can login with a OTP send on registered Email id. 
+
+    b) Sign_up: New registration page for new users and admin.
+
+    c) Admin_Home: It is a admin home page after succesfully admin login. Admin can manage(add, delete & update) admin or user account[Admin_User_table] and also manage(add, update & delete) trains[Train_Table]. Admin also can book a train for someone[Train_Book] and also can manage booking status(Confirm, Cancel & delete)[ticket_status].
+
+    d) User_Home: It is a user home page after succesfully user login. User can book a train[Train_Book] and manage only his bookings[ticket_status].
+
+    e) Admin_User_table: Admin can add new admin or user, update data of [own and other] admin or userand delete admin or user account.
+
+    f) Train_Table: Admin can add, update & delete trains. 
+
+    g) Train_Search: Admin or user can search a train through source station(from) and destination station(to), date and category[General, AC Chair car and Sleeper] and also through train no.
+
+    h) Train_Book: After train search done, Admin or user can book a train for atmost 7 passengers.
+
+    i) Payment: After enter the passengers details, total amount will generate and show a QR for payment. After succesfully done the payment process a ticket PDF will download and a email will send to given Email ID.
+
+    j) Ticket_status: Admin can manage(confirm, cancel and delete) all the tickets and user only can cancel the those tickets which are booked by him/her.
+
+
+There are 6 tables in database. These are following
+    a) admin
+    b) user
+    c) train
+    d) seat_data
+    e) passenger
+    f) ticket
+
+Details:
+    a) admin: This table contains data about admin such that admin id, admin name, passwword, full name, email address, D.O.B, age, phone number, gender, address, city, state, pincode.
+
+    b) user: This table contains data about user such that user id, user name, passwword, full name, email address, D.O.B, age, phone number, gender, address, city, state, pincode.
+
+    c) train: This table contains adata about trains such that train no, train name, source, destination, depurture date and time, arrival date and time, total general, sleeper and AC chaircar seat and available seat, Fare, total travel distance.
+    
+    d) seat_data: this table contains seat data about all the trains present in train table such that starting and ending seat no of each category(General, sleeper and AC Chaircar) and also data about current seat. This data will updated when someone book seats.
+
+    e) passenger: This table contains all the details about pasengers such that PNR no, train no, pasenger name, age, gender, seat_no, class.
+
+    f) ticket: This table contains data about PNR no such that PNR no, train no, train name, source and destination of the trains, booking time, booking date, booked by which user or admin, distance total fare, status.
+
+
+Thank you.
